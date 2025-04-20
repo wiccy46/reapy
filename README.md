@@ -57,3 +57,37 @@ Open Preferences on Reaper
     - Audio --> Recording uncheck all options in Prompt to save/delete/rename new files
 
     - Audio --> Rendering check Automatically close render window when render has finished
+
+## Quick guide:
+
+Refer to `examples` folder.
+
+### Using ReaScript API directly
+
+Not all API are implemented in reapy currently. You can find available API in:
+https://www.reaper.fm/sdk/reascript/reascripthelp.html
+
+```python
+from reapy import reascript_api as RPR
+
+print(RPR.GetProjectName())
+```
+
+### Interact with UI with Perform Action
+
+Action list can be found in: https://raw.githubusercontent.com/Ultraschall/ultraschall-lua-api-for-reaper/Ultraschall-API-4.6/ultraschall_api/misc/misc_docs/Reaper-ActionList.txt
+
+
+
+### Use Action ID:
+
+You can find available action ID in:
+
+https://raw.githubusercontent.com/Ultraschall/ultraschall-lua-api-for-reaper/Ultraschall-API-4.6/ultraschall_api/misc/misc_docs/Reaper-ActionList.txt
+
+```python
+import reapy
+project = reapy.Project()
+track = project.tracks[0].select()
+project.perform_action(40701)
+```
