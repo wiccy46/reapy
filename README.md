@@ -29,7 +29,7 @@ The guide is MacOS only currently, tested on Reaper v7.36
 
 ### Part 2 Python package
 
-- `pip install reapy`
+- `pip install reapy-next`
 - For local dev:
     - Under your virtual environment, navigate to the root folder of this project
     - `pip install -e .`
