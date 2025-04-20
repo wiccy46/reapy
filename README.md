@@ -1,4 +1,4 @@
-# Reapy
+# Reapy-next, reapy package lives on
 
 This is a project to continue the legacy of https://github.com/RomeoDespres/reapy since 2025. 
 
@@ -29,7 +29,8 @@ The guide is MacOS only currently, tested on Reaper v7.36
 
 ### Part 2 Python package
 
-- Currently I haven't published the Package online, for local installation or develop, you can
+- `pip install reapy`
+- For local dev:
     - Under your virtual environment, navigate to the root folder of this project
     - `pip install -e .`
 - Run `python -c "import reapy; reapy.configure_reaper()"`
